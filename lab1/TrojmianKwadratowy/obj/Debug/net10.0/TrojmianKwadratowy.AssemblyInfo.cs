@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrojmianKwadratowy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72504712b2ce30fa87751893499c37e177a34bb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrojmianKwadratowy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrojmianKwadratowy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
