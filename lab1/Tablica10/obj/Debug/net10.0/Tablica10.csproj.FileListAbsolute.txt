@@ -1,0 +1,15 @@
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\bin\Debug\net10.0\Tablica10.exe
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\bin\Debug\net10.0\Tablica10.deps.json
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\bin\Debug\net10.0\Tablica10.runtimeconfig.json
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\bin\Debug\net10.0\Tablica10.dll
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\bin\Debug\net10.0\Tablica10.pdb
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.AssemblyInfoInputs.cache
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.AssemblyInfo.cs
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.csproj.CoreCompileInputs.cache
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.sourcelink.json
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.dll
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\refint\Tablica10.dll
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.pdb
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\Tablica10.genruntimeconfig.cache
+C:\Users\reeve\Documents\ProgramowanieObiektowe2\lab1\Tablica10\obj\Debug\net10.0\ref\Tablica10.dll
