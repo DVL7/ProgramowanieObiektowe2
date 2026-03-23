@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PO2\\lab1\\Tablica10\\Tablica10.csproj": {}
+    "F:\\PO2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj": {}
   },
   "projects": {
-    "F:\\PO2\\lab1\\Tablica10\\Tablica10.csproj": {
+    "F:\\PO2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\PO2\\lab1\\Tablica10\\Tablica10.csproj",
-        "projectName": "Tablica10",
-        "projectPath": "F:\\PO2\\lab1\\Tablica10\\Tablica10.csproj",
+        "projectUniqueName": "F:\\PO2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj",
+        "projectName": "WyswietlLiczby",
+        "projectPath": "F:\\PO2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj",
         "packagesPath": "C:\\Users\\deryl\\.nuget\\packages\\",
-        "outputPath": "F:\\PO2\\lab1\\Tablica10\\obj\\",
+        "outputPath": "F:\\PO2\\lab1\\WyswietlLiczby\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\VisualStudioShared\\NuGetPackages"

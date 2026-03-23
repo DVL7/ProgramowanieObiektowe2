@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
-/// <summary> 
-/// Klasa służąca do wyliczenia wartości na tablicy typu <see cref="double"/>. 
-/// </summary> 
-/// <remarks>
-/// Obliczenia wykonywane są w konstruktorze klasy.
-/// </remarks>
-
 namespace Tablica10
 {
+    /// <summary> 
+    /// Klasa służąca do wyliczenia wartości na tablicy typu <see cref="double"/>. 
+    /// </summary> 
+    /// <remarks>
+    /// Obliczenia wykonywane są w konstruktorze klasy.
+    /// </remarks>
     internal class Tablica
     {
         /// <summary>
@@ -120,6 +119,9 @@ namespace Tablica10
             }
         }
 
+        /// <summary>
+        /// Oblicza maksimum wszystkich elementów tablicy.
+        /// </summary>
         private void ObliczMax()
         {
             for (int i = 0; i < tablica.Length; i++)
@@ -135,7 +137,5 @@ namespace Tablica10
                 }
             }
         }
-
-
     }
 }
