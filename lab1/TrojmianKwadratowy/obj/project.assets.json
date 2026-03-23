@@ -8,23 +8,23 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\reeve\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\deryl\\.nuget\\packages\\": {},
+    "E:\\VisualStudioShared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\TrojmianKwadratowy\\TrojmianKwadratowy.csproj",
+      "projectUniqueName": "F:\\PO2\\lab1\\TrojmianKwadratowy\\TrojmianKwadratowy.csproj",
       "projectName": "TrojmianKwadratowy",
-      "projectPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\TrojmianKwadratowy\\TrojmianKwadratowy.csproj",
-      "packagesPath": "C:\\Users\\reeve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\TrojmianKwadratowy\\obj\\",
+      "projectPath": "F:\\PO2\\lab1\\TrojmianKwadratowy\\TrojmianKwadratowy.csproj",
+      "packagesPath": "C:\\Users\\deryl\\.nuget\\packages\\",
+      "outputPath": "F:\\PO2\\lab1\\TrojmianKwadratowy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "E:\\VisualStudioShared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\reeve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\deryl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
