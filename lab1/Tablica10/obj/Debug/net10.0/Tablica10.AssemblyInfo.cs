@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tablica10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4762503e482a8acfad3883161c5e813f77b6f7a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86d858686193b5cce8f8e8e15447b64def8a798b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tablica10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tablica10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

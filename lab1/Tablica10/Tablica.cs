@@ -2,18 +2,46 @@
 using System.Collections.Generic;
 using System.Text;
 
+/// <summary> 
+/// Klasa służąca do wyliczenia wartości na tablicy typu <see cref="double"/>. 
+/// </summary> 
+/// <remarks>
+/// Obliczenia wykonywane są w konstruktorze klasy.
+/// </remarks>
+
 namespace Tablica10
 {
     internal class Tablica
     {
+        /// <summary>
+        /// Tablica przekazywana do obliczeń.
+        /// </summary>
         private double[] tablica;
-
+        /// <summary>
+        /// Suma wszystkich elementów tablicy.
+        /// </summary>
         public double Suma { get; private set; }
+        /// <summary>
+        /// Iloczyn wszystkich elementów tablicy.
+        /// </summary>
         public double Iloczyn { get; private set; }
+        /// <summary>
+        /// Srednia wszystkich elementów tablicy.
+        /// </summary>
         public double Srednia { get; private set; }
+        /// <summary>
+        /// Minimum wszystkich elementów tablicy.
+        /// </summary>
         public double Min { get; private set; }
+        /// <summary>
+        /// Maksimum wszystkich elementów tablicy.
+        /// </summary>
         public double Max { get; private set; }
 
+        /// <summary>
+        /// Konstruktor, zawiera przypisanie parametru wejściowego do zmiennej, oraz wywołanie metod obliczających wartości.
+        /// </summary>
+        /// <param name="tablica">Tablica wartości na której operują metody </param>
         public Tablica(double[] tablica)
         {
             this.tablica = tablica;
@@ -25,6 +53,9 @@ namespace Tablica10
             ObliczMax();
         }
 
+        /// <summary>
+        /// Wyświetla wszystkie elementy tablicy.
+        /// </summary>
         public void WyswietlTablice()
         {
 
@@ -32,6 +63,9 @@ namespace Tablica10
 
         }
 
+        /// <summary>
+        /// Wylicza sumę wszystkich elementów tablicy.
+        /// </summary>
         private void ObliczSume()
         {
             for (int i = 0; i < tablica.Length; i++)
@@ -40,19 +74,35 @@ namespace Tablica10
             }
         }
 
+        /// <summary>
+        /// wylicza Iloczyn wszystkich elementów tablicy.
+        /// </summary>
         private void ObliczIloczyn()
         {
             for (int i = 0; i < tablica.Length; i++)
             {
-                Iloczyn *= tablica[i];
+                if (i == 0)
+                {
+                    Iloczyn = tablica[0];
+                }
+                else
+                {
+                    Iloczyn *= tablica[i];
+                }
             }
         }
 
+        /// <summary>
+        /// Oblicza średnią wszystkich elementów tablicy.
+        /// </summary>
         private void ObliczSrednia()
         {
             Srednia = Suma / tablica.Length;
         }
 
+        /// <summary>
+        /// Oblicza minimum wszystkich elementów tablicy.
+        /// </summary>
         private void ObliczMin()
         {
             for (int i = 0;i < tablica.Length;i++)
