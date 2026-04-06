@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="../SortowanieLiczb/SortowanieLiczb.csproj" />
+  <Project Path="LiczbyPetla/LiczbyPetla.csproj" />
   <Project Path="Tablica10.csproj" />
 </Solution>
