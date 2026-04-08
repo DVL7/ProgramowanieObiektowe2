@@ -1,15 +1,17 @@
 ﻿using Klasy;
 
-Console.WriteLine($"Podaj imie: ");
-string? imie = Console.ReadLine();
 
-Console.WriteLine($"Podaj nazwisko: ");
-string? nazwisko = Console.ReadLine();
+Console.WriteLine("\n");
+Console.WriteLine("Osoba.cs\n");
 
-Console.WriteLine($"Podaj wiek: ");
-string? wiek = Console.ReadLine();
-
-Osoba osoba = new Osoba(imie, nazwisko, wiek);
-
-Console.WriteLine("\n\n");
+Osoba osoba = new Osoba("Dawid", "Deryło", "23");
 osoba.WyswietlInformacje();
+
+Console.WriteLine("\n");
+Console.WriteLine("BankAccount.cs\n");
+
+BankAccount konto = new BankAccount("Jan Kowalski", 1000);
+konto.Wplata(500);
+konto.Wyplata(200);
+Console.WriteLine($"Saldo: {konto.Saldo}");
+
