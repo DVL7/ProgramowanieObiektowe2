@@ -24,6 +24,9 @@ public class Osoba
     /// <exception cref="ArgumentException">Występuje gdy dane nie spełaniają założeń zmiennych klasy.</exception>
     public Osoba(string imie, string nazwisko, string wiek)
     {
+        ArgumentException.ThrowIfNullOrWhiteSpace(imie);
+        ArgumentException.ThrowIfNullOrWhiteSpace(nazwisko);
+
         this.Imie = imie;
         this.Nazwisko = nazwisko;
 

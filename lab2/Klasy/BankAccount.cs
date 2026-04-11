@@ -7,6 +7,8 @@ public class BankAccount
 
     public BankAccount(string wlasciciel, decimal kwotaPoczatkowa)
     {
+        ArgumentException.ThrowIfNullOrWhiteSpace(wlasciciel);
+
         if (string.IsNullOrEmpty(wlasciciel))
         {
             throw new ArgumentException("Dane właściciel nie mogą być puste", nameof(wlasciciel));
