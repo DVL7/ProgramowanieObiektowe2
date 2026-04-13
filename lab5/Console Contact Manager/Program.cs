@@ -1,1 +1,1 @@
-﻿const string ConnectionString = "Server=localhost;Database=ContactDB;Trusted_Connection=True;TrustServerCertificate=True; ";
+﻿const string ConnectionString = "Server=DESKTOP - LOVQAOE;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
