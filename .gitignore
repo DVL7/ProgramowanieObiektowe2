@@ -1,2 +1,25 @@
-*.vs
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE/editor metadata (user/machine specific)
+.vs/
+.vscode/*
+!.vscode/extensions.json
+
+# Visual Studio user files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET build artifacts
+**/bin/
+**/obj/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Project-specific
 *.pdf

@@ -3,7 +3,7 @@
 namespace WyswietlLiczby
 {
     /// <summary>
-    /// Jest to klasa służąca do przetwarzania tablicy liczbami całkowitymi.
+    /// Jest to klasa służąca do przetwarzania tablicy liczb całkowitych.
     /// </summary>
     internal class Liczby
     {
