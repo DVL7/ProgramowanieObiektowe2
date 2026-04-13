@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj",
-      "projectName": "WyswietlLiczby",
-      "projectPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\WyswietlLiczby\\WyswietlLiczby.csproj",
+      "projectUniqueName": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab5\\Console Contact Manager\\Console Contact Manager.csproj",
+      "projectName": "Console Contact Manager",
+      "projectPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab5\\Console Contact Manager\\Console Contact Manager.csproj",
       "packagesPath": "C:\\Users\\reeve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab1\\WyswietlLiczby\\obj\\",
+      "outputPath": "C:\\Users\\reeve\\Documents\\ProgramowanieObiektowe2\\lab5\\Console Contact Manager\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
