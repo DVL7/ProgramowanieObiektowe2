@@ -9,17 +9,17 @@ class Program
     // 1) CONNECTION STRING
     // =========================
     // TODO (student):
-    // - Uzupe ł nij poprawny connection string do swojej instancji SQL Server
-    // - Wskaz ówka: w SSMS sprawd ź nazw ę serwera (np. "." albo "DESKTOP - XYZ")
-    // - Wskaz ówka: Database musi by ć ContactDB
-    // Przyk ł ad:
+    // - Uzupełnij poprawny connection string do swojej instancji SQL Server
+    // - Wskazówka: w SSMS sprawd ź nazw ę serwera (np. "." albo "DESKTOP - XYZ")
+    // - Wskazówka: Database musi by ć ContactDB
+    // Przykład:
     // "Server=.;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
     const string ConnectionString = "Server=Dawid;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
     static void Main()
     {
         // TODO (student):
-        // - Utwórz obiekt repozytorium ContactRepository, przekazuj ąc ConnectionString
-        // - Wskaz ówka: var repo = new ContactRepository(ConnectionString);
+        // - Utwórz obiekt repozytorium ContactRepository, przekazując ConnectionString
+        // - Wskazówka: var repo = new ContactRepository(ConnectionString);
         var repo = new ContactRepository(ConnectionString); // <-- usu ń null! po poprawnym utworzeniu repo
         while(true)
         {
@@ -30,27 +30,27 @@ class Program
                 switch(choice)
                 {
                 case "1":
-                    // TODO (student): wywo ł aj metod ę Create(repo)
+                    // TODO (student): wywołaj metod ę Create(repo)
                     Create(repo);
                     break;
                 case "2":
-                    // TODO (student): wywo ł aj metod ę ReadAll(repo)
+                    // TODO (student): wywołaj metod ę ReadAll(repo)
                     ReadAll(repo);
                     break;
                 case "3":
-                    // TODO (student): wywo ł aj metod ę Search(repo)
+                    // TODO (student): wywołaj metod ę Search(repo)
                     Search(repo);
                     break;
                 case "4":
-                    // TODO (student): wywo ł aj metod ę Update(repo)
+                    // TODO (student): wywołaj metod ę Update(repo)
                     Update(repo);
                     break;
                 case "5":
-                    // TODO (student): wywo ł aj metod ę Delete(repo)
+                    // TODO (student): wywołaj metod ę Delete(repo)
                     Delete(repo);
                     break;
                 case "6":
-                    // TODO (student): wywo ł aj metod ę BulkInsertDemo(repo)
+                    // TODO (student): wywołaj metod ę BulkInsertDemo(repo)
                     BulkInsertDemo(repo);
                     break ;
                 case "0":
@@ -84,10 +84,10 @@ class Program
     static void Create(ContactRepository repo)
     {
         // TODO (student):
-        // - Utwórz obiekt Contact i pobierz dane od u ż ytkownika
-        // - Uż yj ReadRequired(...) dla imienia i nazwiska
-        // - Uż yj ReadOptional(...) dla telefonu i email
-        // - Wywo ł aj repo.Add(contact) i wy ś wietl Id nowego rekordu
+        // - Utwórz obiekt Contact i pobierz dane od użytkownika
+        // - Użyj ReadRequired(...) dla imienia i nazwiska
+        // - Użyj ReadOptional(...) dla telefonu i email
+        // - Wywołaj repo.Add(contact) i wyświetl Id nowego rekordu
         // Wskaz ówka:
         // var c = new Contact { FirstName = ..., LastName = ..., Phone = ..., Email = ... };
         // int id = repo.Add(c);
@@ -111,7 +111,7 @@ class Program
         // TODO (student):
         // - Pobierz list ę: repo.GetAll()
         // - Wy ś wietl nag łó wek tabeli
-        // - Przejd ź po li ś cie i wypisz kontakty (mo ż esz u ż y ć ToString() z modelu Contact)
+        // - Przejdź po liście i wypisz kontakty (możesz użyć ToString() z modelu Contact)
         var contacts = repo.GetAll();
         if (contacts.Count == 0)
         {
@@ -131,9 +131,9 @@ class Program
     static void Search(ContactRepository repo)
     {
         // TODO (student):
-        // - Pobierz od u ż ytkownika fragment nazwiska
-        // - Wywo ł aj repo.SearchByLastName(fragment)
-        // - Wy ś wietl wyniki
+        // - Pobierz od użytkownika fragment nazwiska
+        // - Wywołaj repo.SearchByLastName(fragment)
+        // - Wyświetl wyniki
         string fragment = ReadRequired("Fragment nazwiska: ");
         var results = repo.SearchByLastName(fragment);
 
@@ -157,8 +157,8 @@ class Program
         // - Pobierz ID (ReadInt)
         // - Pobierz nowe dane (ReadRequired/ReadOptional)
         // - Utwórz Contact z Id i polami
-        // - Wywo ł aj repo.Update(contact)
-        // - Wy ś wietl komunikat czy zaktualizowano
+        // - Wywołaj repo.Update(contact)
+        // - Wyświetl komunikat czy zaktualizowano
         int id = ReadInt("Id kontaktu do edycji: ");
         var c = new Contact
         {
@@ -179,8 +179,8 @@ class Program
     {
         // TODO (student):
         // - Pobierz ID (ReadInt)
-        // - Wywo ł aj repo.Delete(id)
-        // - Wy ś wietl komunikat czy usuni ęto
+        // - Wywołaj repo.Delete(id)
+        // - Wyświetl komunikat czy usuni ęto
         int id = ReadInt("Id kontaktu do usunięcia: ");
         bool ok = repo.Delete(id);
         Console.WriteLine(ok ? "Usunięto kontakt." : "Nie znaleziono kontaktu.");
@@ -192,11 +192,11 @@ class Program
     {
         // TODO (student) – wersja podstawowa:
         // - Utwórz list ę kilku Contact (np. 3 rekordy)
-        // - Wywo ł aj repo.BulkInsert(lista)
-        // - Wy ś wietl ile dodano
+        // - Wywołaj repo.BulkInsert(lista)
+        // - Wyświetl ile dodano
         // TODO (student) – wersja na 5.0 (opcjonalnie):
-        // - Zapytaj u ż ytkownika ile rekord ów wygenerowa ć
-        // - Wygeneruj przyk ł adowe dane w p ętli
+        // - Zapytaj użytkownika ile rekordów wygenerować
+        // - Wygeneruj przykładowe dane w pętli
         var contacts = new List<Contact>
         {
             new Contact { FirstName = "Jan", LastName = "Kowalski", Phone = "500100200", Email = "jan@example.com" },
