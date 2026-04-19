@@ -1,5 +1,6 @@
 namespace Klasy;
 
+
 public class Osoba
 {
     /// <summary>
