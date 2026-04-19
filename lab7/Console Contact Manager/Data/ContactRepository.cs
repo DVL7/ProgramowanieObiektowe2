@@ -1,4 +1,5 @@
-﻿using ContactManagerSQL.Models;
+﻿using Microsoft.Data.SqlClient;
+using ContactManagerSQL.Models;
 using ContactManagerSQL.Utils;
 using System;
 using System.Collections.Generic;
@@ -27,8 +28,8 @@ namespace ContactManagerSQL.Data
                 cmd.Parameters.AddWithValue("@ph", (object?)c.Phone ?? DBNull.Value);
                 cmd.Parameters.AddWithValue("@em", (object?)c.Email ?? DBNull.Value);
                 int newId = (int)cmd.ExecuteScalar();
-                Logger.Info($"Add Contact OK (Id= {newId} , {c.FirstName} { c.LastName} )" );
-            return newId;
+                Logger.Info($"Add Contact OK (Id= {newId}, {c.FirstName} { c.LastName} )" );
+                return newId;
             }
             catch (Exception ex)
             {
@@ -92,12 +93,12 @@ namespace ContactManagerSQL.Data
                         Email = r.IsDBNull(4) ? null : r.GetString(4)
                     });
                 }
-                Logger.Info($"SearchByLastName OK (q=' {lastNamePart} ',count = { result.Count} )" );
+                Logger.Info($"SearchByLastName OK (q = '{lastNamePart}', count = {result.Count})");
                 return result;
             }
             catch (Exception ex)
             {
-                Logger.Error($"SearchByLastName FAILED: {ex.Message} ");
+                Logger.Error($"SearchByLastName FAILED: {ex.Message}");
                 throw;
             }
         }
@@ -137,7 +138,7 @@ namespace ContactManagerSQL.Data
                 using SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", id);
                 int rows = cmd.ExecuteNonQuery();
-                Logger.Info($"Delete Contact {(rows > 0 ? "OK" : "NOT FOUND")} (Id = { id} )" );
+                Logger.Info($"Delete Contact {(rows > 0 ? "OK" : "NOT FOUND")} (Id = { id} )");
                 return rows > 0;
             }
             catch (Exception ex)
@@ -167,13 +168,13 @@ namespace ContactManagerSQL.Data
                     inserted += cmd.ExecuteNonQuery();
                 }
                 tx.Commit();
-                Logger.Info($"BulkInsert OK (count= {inserted} )");
+                Logger.Info($"BulkInsert OK (count= {inserted})");
                 return inserted;
             }
             catch (Exception ex)
             {
                 tx.Rollback();
-                Logger.Error($"BulkInsert FAILED - > ROLLBACK: {ex.Message} ");
+                Logger.Error($"BulkInsert FAILED - > ROLLBACK: {ex.Message}");
                 throw;
             }
         }
