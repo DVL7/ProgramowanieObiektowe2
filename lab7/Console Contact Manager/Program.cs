@@ -14,7 +14,7 @@ class Program
     // - Wskaz ówka: Database musi by ć ContactDB
     // Przyk ł ad:
     // "Server=.;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
-    const string ConnectionString = "Server=DESKTOP-LOVQAOE;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
+    const string ConnectionString = "Server=Dawid;Database=ContactDB;Trusted_Connection=True;Encrypt=False;";
     static void Main()
     {
         // TODO (student):
