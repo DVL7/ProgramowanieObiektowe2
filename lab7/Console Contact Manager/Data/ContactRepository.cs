@@ -80,6 +80,7 @@ namespace ContactManagerSQL.Data
                 using SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@ln", "%" + lastNamePart + "%");
                 using SqlDataReader r = cmd.ExecuteReader();
+
                 while (r.Read())
                 {
                     result.Add(new Contact
@@ -92,7 +93,7 @@ namespace ContactManagerSQL.Data
                     });
                 }
                 Logger.Info($"SearchByLastName OK (q=' {lastNamePart} ',count = { result.Count} )" );
-            return result;
+                return result;
             }
             catch (Exception ex)
             {
@@ -136,9 +137,8 @@ namespace ContactManagerSQL.Data
                 using SqlCommand cmd = new SqlCommand(sql, conn);
                 cmd.Parameters.AddWithValue("@id", id);
                 int rows = cmd.ExecuteNonQuery();
-                Logger.Info($"Delete Contact {(rows > 0 ? "OK" : "NOT FOUND")}
-                (Id = { id} )" );
-            return rows > 0;
+                Logger.Info($"Delete Contact {(rows > 0 ? "OK" : "NOT FOUND")} (Id = { id} )" );
+                return rows > 0;
             }
             catch (Exception ex)
             {
@@ -149,13 +149,9 @@ namespace ContactManagerSQL.Data
         // TRANSACTION: bulk insert (masowe wstawianie)
         public int BulkInsert(List<Contact> contacts)
         {
-            const string sql = @"
-INSERT INTO dbo.Contacts (FirstName, LastName, Phone, Email)
-VALUES (@fn, @ln, @ph, @em);";
+            const string sql = @"INSERT INTO dbo.Contacts (FirstName, LastName, Phone, Email) VALUES (@fn, @ln, @ph, @em);";
             if (contacts == null || contacts.Count == 0) return 0;
-            15
-        PROGRAMOWANIE OBIEKTOWE C#
-using SqlConnection conn = new SqlConnection(_connectionString);
+            using SqlConnection conn = new SqlConnection(_connectionString);
             conn.Open();
             using SqlTransaction tx = conn.BeginTransaction();
             try
@@ -166,10 +162,8 @@ using SqlConnection conn = new SqlConnection(_connectionString);
                     using SqlCommand cmd = new SqlCommand(sql, conn, tx);
                     cmd.Parameters.AddWithValue("@fn", c.FirstName);
                     cmd.Parameters.AddWithValue("@ln", c.LastName);
-                    cmd.Parameters.AddWithValue("@ph", (object?)c.Phone ??
-                    DBNull.Value);
-                    cmd.Parameters.AddWithValue("@em", (object?)c.Email ??
-                    DBNull.Value);
+                    cmd.Parameters.AddWithValue("@ph", (object?)c.Phone ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@em", (object?)c.Email ?? DBNull.Value);
                     inserted += cmd.ExecuteNonQuery();
                 }
                 tx.Commit();
